@@ -1,0 +1,165 @@
+/***********************  TOP Bar ********************/
+/*Dheeraj Verma 22-Dec-2022*/
+.sidebar-nav-2 {
+    border-right: 1px solid #E4E7EC;
+}
+.sidebar-nav-2 li a .right {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.sidebar-nav-2 li a.collapsed .right svg {
+    color: #98A2B3;
+    width: 16px;
+    transform: rotate(0deg);
+}
+.sidebar-nav-2 li a .right svg {
+    color: #101828;
+    width: 16px;
+    transform: rotate(180deg);
+}
+.sidebar-nav-2 li a .right small {
+    margin-right: 3px;
+}
+/*Dheeraj Verma 22-Dec-2022*/
+.nav-menu{
+    /*width: 225px;*/
+    height: inherit;
+    /*padding:5px;*/
+    margin-top: 20px !important;
+    /*border: 1px solid #E4E7EC;*/
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    
+}
+.bg-defoult{background-color:#fff;}
+
+/* .nav-menu li a, .nav-menu li a.collapsed{
+    color: #344054 !important;
+    font-size: 14px;
+    font-weight: 500;
+} */
+.nav-menu li a{
+    color: #344054 !important;
+    font-size: 15px;
+    font-weight: 500;
+    display:block;
+    padding:8px 10px;
+    border-left:0px solid #dedede;
+    text-decoration:none;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    /* font-family: Inter !important; */
+}
+.nav-menu li a .icon{
+    color: #98A2B3;
+    float: right;
+    margin-top:5px;
+    font-size: 12px;
+}
+.nav-menu li a .svg{
+width:18px;
+height: 18px;
+}
+.nav-menu li a.active{
+    /* background-color:#EFF8FF !important; */
+    color: #344054 !important;
+    transition: all 0.5s  ease-in-out;
+}
+.nav-menu li a:hover{
+    background-color:#EFF8FF !important;
+    color: #175CD3 !important;
+    transition: all 0.5s  ease-in-out;
+}
+.nav-menu ul{ list-style:none;
+    margin:0px;
+    padding:0px; 
+}
+/* .nav-menu li a,.nav-menu li a.collapsed{
+    background-color: #fff !important;
+    display:block;
+    padding:8px 12px;
+    color:#000;
+    border-left:0px solid #dedede;
+    text-decoration:none
+} */
+
+/*.nav-menu li a:hover{background-color:#fff !important;}*/
+.nav-menu li a i{ padding-right:5px;}
+.nav-menu ul li .sub-menu li a{ position:relative}
+/* .nav-menu ul li .sub-menu li a:hover:after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 5px;
+    background-color: rgb(223, 219, 219);
+    height: 100%;
+} */
+.nav-menu ul li .sub-menu li a:hover{ background-color:#222;  transition: all 0.5s  ease-in-out}
+/* .sub-menu{ border-left:5px solid #dedede;} */
+	.nav-menu li a .nav-label,.nav-menu li a .nav-label+span{
+         transition: all 0.5s  ease-in-out;
+         
+        }
+       
+        
+
+	.nav-menu.fliph li a .nav-label,.nav-menu.fliph li a .nav-label+span{ display:none;transition: all 0.5s  ease-in-out}
+	.nav-menu.fliph {
+    width: 42px;transition: all 0.5s  ease-in-out;
+   
+}
+	
+.nav-menu.fliph li{ position:relative}
+.nav-menu.fliph .sub-menu {
+    position: absolute;
+    left: 39px;
+    top: 0;
+    background-color: #222;
+    width: 150px;
+    z-index: 100;
+}
+	
+
+	.user-panel {
+    clear: left;
+    display: block;
+    float: left;
+}
+.user-panel>.image>img {
+    width: 100%;
+    max-width: 45px;
+    height: auto;
+}
+.user-panel>.info,  .user-panel>.info>a {
+    color: #fff;
+}
+.user-panel>.info>p {
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+.user-panel {
+    clear: left;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 25px 15px;
+    border-bottom: 1px solid;
+}
+.user-panel>.info {
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+    position: absolute;
+    left: 55px;
+}
+
+.fliph .user-panel{ display: none; }
+.nav-menu .sub-menu{margin-left: 20px !important;}

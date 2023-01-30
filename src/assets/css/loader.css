@@ -1,0 +1,64 @@
+@-webkit-keyframes spinner-border {
+  to {
+    transform: rotate(360deg) /* rtl:ignore */;
+  }
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg) /* rtl:ignore */;
+  }
+}
+.loader-overlay {
+  background-color: rgba(248, 245, 245, 0.653);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner-border {
+  border: 16px solid #d1e9ff;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2em;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner-border {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+  }
+}

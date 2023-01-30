@@ -1,0 +1,109 @@
+.form .form-control:not(textarea) {
+    font-size: .85rem;
+    height: 38px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    -moz-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border: 1px solid #D0D5DD;
+    color: #002060;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+.form textarea.form-control {
+    font-size: .75rem;
+    box-shadow: 0px 2px 4px #C1C1C129;
+    -webkit-box-shadow: 0px 2px 4px #C1C1C129;
+    -moz-box-shadow: 0px 2px 4px #C1C1C129;
+    border: 1px solid #F1F1F1;
+    color: #002060;
+    background-color: #FCFCFC;
+}
+select.form-control:not([multiple]) {
+    height: 38px !important;
+    padding: 0.275rem 0.75rem;/*
+    background-image: url(../images/arrow-for-select.svg);
+    background-repeat: no-repeat;
+    background-position: top 19px right 8px;*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    padding-right: 30px;
+}
+input.form-control.file {
+    visibility: hidden;
+    position: relative;
+}
+.form label {
+    color: #344054;
+    font-size: 14px;
+    line-height: 15px;
+}
+.pin_code input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button{
+    
+    display: none !important;
+    
+}
+.pin_code input{
+    height:47px;
+    border-radius: 8px;
+}
+label.file {
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+}
+label.file span {
+    position: absolute;
+    left: 15px;
+    top: 6px;
+    font-size: .75rem;
+    color: #666;
+}
+.custom-radio .custom-control-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label#upload-right-arrow {
+    top: auto;
+    left: auto;
+}
+.form-group.has-right-icon {
+    position: relative;
+}
+.form-group.has-right-icon svg {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    width: 20px;
+}
+.form-group.has-right-icon.no-label svg {
+    top: 6px;
+    right: 8px;
+}
+
+.form-control:focus {
+    border: 1px solid #84CAFF !important;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #EBF9FF !important;
+}
+.cpt{
+    font-size: 15px;
+    text-transform: lowercase;
+    color: #1570EF;
+}
+.cpt span{
+    text-transform: lowercase !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}

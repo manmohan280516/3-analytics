@@ -1,0 +1,23 @@
+.search-box {
+	position: relative;
+}
+.search-box input {
+	padding-left: 33px !important;
+}
+.search-box svg {
+	position: absolute;
+	top: 7px;
+	left: 10px;
+	color: #667085;
+	width: 20px;
+}
+.search-box .close-btn {
+	position: absolute;
+	right: 40px;
+    top: 1px;
+    cursor: pointer;
+    color: #101828;
+}
+.search-box .close-btn svg {
+    color: #101828;
+}
